@@ -10,11 +10,39 @@
     font-style: bold;
 }
 
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor principal de la página de inicio */
+.home-container {
+    position: relative;
+    height: 80vh; /* Ocupa el 80% de la altura de la ventana gráfica */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el contenedor del texto de bienvenida */
+.welcome-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el texto de bienvenida */
 .welcome {
     font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
-    font-size: 80px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    font-size: 5vw; /* Ajusta el tamaño según tus preferencias */
+    text-align: center;
+}
+
+/* Media query para ajustar el tamaño del texto en la versión móvil */
+@media screen and (max-width: 768px) {
+    .welcome {
+        font-size: 12vw; /* Ajusta el tamaño del texto para dispositivos móviles */
+        margin: 0 20px; /* Agrega un margen a los lados para dispositivos móviles */
+    }
+}

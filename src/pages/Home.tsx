@@ -4,9 +4,9 @@ import NavBar from '../components/NavBar';
 
 function HomePage() {
     return (
-        <div>
-            <NavBar></NavBar>
-            <div>
+        <div className="home-container">
+            <NavBar />
+            <div className="welcome-container">
                 <h1 className="welcome">casual entertainment</h1>
             </div>
         </div>
