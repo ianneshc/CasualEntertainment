@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
-import "../styles/About.css";
 import NavBar from "../components/NavBar";
+import SocialNetwork from "../components/SocialNetwork";
 
 import FirstImage from "../assets/Images/carousel (1).jpg";
 import SecondImage from "../assets/Images/carousel (2).jpg";
 import ThirdImage from "../assets/Images/carousel (3).jpg";
 import FourthImage from "../assets/Images/carousel (4).jpg";
 
+import "../styles/About.css";
+
 const AboutPage: React.FC = () => {
   const images = [FirstImage, SecondImage, ThirdImage, FourthImage];
-
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -22,7 +23,9 @@ const AboutPage: React.FC = () => {
   return (
     <main className="about-page">
       <NavBar />
-      <h1 className="welcome">Sobre Nosotros</h1>
+      <h1 className="welcome" tabIndex={0}>
+        Sobre Nosotros
+      </h1>
       <p className="subWelcome">
         En Casual Entertainment, nos dedicamos a transformar hogares en espacios
         extraordinarios y funcionales que reflejan la esencia de cada cliente.
@@ -41,10 +44,18 @@ const AboutPage: React.FC = () => {
               key={index}
               src={image}
               alt={`Reforma de Hogar - Imagen ${index + 1}`}
+              className="carousel-img"
             />
           ))}
         </div>
       </section>
+      <div className="socialMedia">
+        <h2 className="mediaTitle">Nuestras redes sociales</h2>
+        <div className="socialLinks">
+          <SocialNetwork socialNetwork="Instagram" businessTag="@eeepersonality" whereTo="https://www.instagram.com/eeepersonality/"></SocialNetwork>
+          <SocialNetwork socialNetwork="Facebook" businessTag="@casualentertainment" whereTo="https://www.facebook.com/casualentertainmentreformas/"></SocialNetwork>
+        </div>
+      </div>
     </main>
   );
 };
