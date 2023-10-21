@@ -1,0 +1,12 @@
+.footerContainer {
+    display: grid;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    background-color: black;
+}
+
+.copyright {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}

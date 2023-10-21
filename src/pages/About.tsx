@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 import SocialNetwork from "../components/SocialNetwork";
+import Footer from "../components/Footer";
 
 import FirstImage from "../assets/Images/carousel (1).jpg";
 import SecondImage from "../assets/Images/carousel (2).jpg";
@@ -25,7 +26,7 @@ const AboutPage: React.FC = () => {
   return (
     <main className="about-page">
       <NavBar />
-      <h1 className="welcome" tabIndex={0}>
+      <h1 className="aboutWelcome" tabIndex={0}>
         Sobre Nosotros
       </h1>
       <p className="mainSub">
@@ -60,13 +61,18 @@ const AboutPage: React.FC = () => {
           <img src={ PlanningImage } alt="A man with a book in his hands" className="planningImage" />
         </div>
       </section>
-      <div className="socialMedia">
-        <h2 className="mediaTitle">Nuestras redes sociales</h2>
-        <div className="socialLinks">
-          <SocialNetwork socialNetwork="Instagram" businessTag="@eeepersonality" whereTo="https://www.instagram.com/eeepersonality/"></SocialNetwork>
-          <SocialNetwork socialNetwork="Facebook" businessTag="@casualentertainment" whereTo="https://www.facebook.com/casualentertainmentreformas/"></SocialNetwork>
+      <section className="socialMedia">
+        <div className="socialMedia">
+          <h2 className="mediaTitle">Nuestras redes sociales</h2>
+          <div className="socialLinks">
+            <SocialNetwork socialNetwork="Instagram" businessTag="@eeepersonality" whereTo="https://www.instagram.com/eeepersonality/"></SocialNetwork>
+            <SocialNetwork socialNetwork="Facebook" businessTag="@casualentertainment" whereTo="https://www.facebook.com/casualentertainmentreformas/"></SocialNetwork>
+          </div>
         </div>
-      </div>
+      </section>
+      <section className="footer">
+        <Footer></Footer>
+      </section>
     </main>
   );
 };

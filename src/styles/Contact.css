@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Kenoky";
+    src: url("../assets/fonts/Kenoky/KENOKY-Normal.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kenoky Bold";
+    src: url("../assets/fonts/Kenoky/KENOKY-Bold.ttf");
+    font-style: bold;
+}
+
+.contactTitle {
+    font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
+    font-size: 5vw; /* Ajusta el tamaño según tus preferencias */
+    text-align: center;
+}

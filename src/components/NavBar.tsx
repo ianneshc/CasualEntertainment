@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../logo.svg';
 import '../styles/NavBar.css';
+import LoginButton from './LoginButton';
 
 function NavBar() {
     const navigate = useNavigate();
@@ -16,6 +17,7 @@ function NavBar() {
                     <a href="/about">Sobre nosotros</a>
                     <a href="/contact">Contacto</a>
                 </div>
+                <LoginButton></LoginButton>
             </nav>
             <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <div className={`line ${isMenuOpen ? 'line-1' : ''}`}></div>

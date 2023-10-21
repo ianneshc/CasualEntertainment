@@ -1,0 +1,11 @@
+.buttonContainer {
+    width: 131px;
+    height: 48px;
+    border-radius: 100px;
+    align-items: center;
+    background: black;
+}
+
+.loginButtonText {
+    color: white;
+}
