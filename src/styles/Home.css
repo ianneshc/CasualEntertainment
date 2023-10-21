@@ -39,7 +39,7 @@ body {
     text-align: center;
 }
 
-.subWelcome {
+.bigSubWelcome {
     font-size: 18px;
     margin-top: 20px;
     line-height: 1.6;
@@ -57,7 +57,7 @@ body {
     }
     .subWelcome {
         font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Chillax', Arial, Helvetica, sans-serif;
         max-width: 400px;
     }
 }

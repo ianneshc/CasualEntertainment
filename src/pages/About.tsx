@@ -7,6 +7,8 @@ import SecondImage from "../assets/Images/carousel (2).jpg";
 import ThirdImage from "../assets/Images/carousel (3).jpg";
 import FourthImage from "../assets/Images/carousel (4).jpg";
 
+import PlanningImage from "../assets/Images/Planning.jpg";
+
 import "../styles/About.css";
 
 const AboutPage: React.FC = () => {
@@ -26,7 +28,7 @@ const AboutPage: React.FC = () => {
       <h1 className="welcome" tabIndex={0}>
         Sobre Nosotros
       </h1>
-      <p className="subWelcome">
+      <p className="mainSub">
         En Casual Entertainment, nos dedicamos a transformar hogares en espacios
         extraordinarios y funcionales que reflejan la esencia de cada cliente.
         Nuestro enfoque meticuloso en cada detalle y nuestra pasión por el
@@ -47,6 +49,15 @@ const AboutPage: React.FC = () => {
               className="carousel-img"
             />
           ))}
+        </div>
+      </section>
+      <section className="differencesContainer">
+        <div className="differences">
+          <h1 className="differencesTitle">¿Porqué nosotros?</h1>
+          <p className="differencesSub">
+          Dejamos usted sea el protagonista en todo momento en el proceso de  transformación de su hogar. Nos encargamos de dar forma a sus ideas acompañándole en todo el proceso de la elección de elementos y materiales que definan su propia personalidad y los adaptamos a sus necesidades. Calidad, precio y compromiso son nuestros principios. Sumamos todo esto para obtener nuestro principal elemento diferenciador.
+          </p>
+          <img src={ PlanningImage } alt="A man with a book in his hands" className="planningImage" />
         </div>
       </section>
       <div className="socialMedia">

@@ -24,14 +24,14 @@ a {
 
 .logo {
     padding: 15px;
-    width: 120px;
+    width: 140px;
     height: auto;
 }
 
 .links {
     display: flex;
     align-items: center;
-    padding: 20px; /* Ajusta el padding según sea necesario */
+    padding: 20px;
 }
 
 .text-links a {
@@ -55,19 +55,18 @@ a {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    padding: 10px; /* Ajusta el padding del botón de hamburguesa */
-    z-index: 2; /* Asegura que el botón de hamburguesa esté por encima del panel lateral cuando se expanda */
+    padding: 10px;
+    z-index: 2;
 }
 
 .line {
-    width: 20px; /* Ajusta el ancho de la línea según sea necesario */
-    height: 2px; /* Ajusta la altura de la línea según sea necesario */
+    width: 20px;
+    height: 2px;
     background-color: black;
     margin: 3px 0;
-    transition: all 0.3s ease; /* Añade una transición suave a las líneas */
+    transition: all 0.3s ease;
 }
 
-/* Añade estilos de animación al botón de hamburguesa */
 .hamburger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(2px, 2px);
 }
@@ -80,24 +79,22 @@ a {
     transform: rotate(-45deg) translate(2px, -2px);
 }
 
-/* Añade estilos para el panel lateral */
 .side-panel {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 0; /* Ajusta el ancho según sea necesario */
+    width: 0;
     background-color: #f9f9f9;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     overflow: hidden;
-    transition: width 0.3s ease; /* Añade una transición suave al ancho del panel lateral */
-    z-index: 1; /* Asegura que el panel lateral esté detrás del botón de hamburguesa */
+    transition: width 0.3s ease;
+    z-index: 1;
 }
 
-/* Añade estilos para los enlaces en el panel lateral */
 .side-panel a {
     padding: 10px;
     text-decoration: none;
@@ -105,13 +102,12 @@ a {
     color: black;
 }
 
-/* Ajusta los estilos y muestra el panel lateral solo en dispositivos móviles */
 @media only screen and (max-width: 600px) {
     .links {
         display: flex;
         align-items: center;
         padding: 20px;
-        display: none; /* Oculta los enlaces en la barra de navegación en dispositivos móviles */
+        display: none;
     }
 
     .links.active {
@@ -121,7 +117,7 @@ a {
     .hamburger {
         display: flex;
         padding-right: 35px;
-        z-index: 2; /* Asegura que el botón de hamburguesa esté por encima del panel lateral cuando se expanda */
+        z-index: 2;
     }
 
     .text-links a {
@@ -130,6 +126,6 @@ a {
     }
 
     .side-panel {
-        width: 200px; /* Muestra el panel lateral al activar el botón de hamburguesa */
+        width: 200px;
     }
 }
