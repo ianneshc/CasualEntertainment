@@ -1,9 +1,13 @@
-.buttonContainer {
+.loginButtonContainer {
     width: 131px;
     height: 48px;
     border-radius: 100px;
     align-items: center;
-    background: black;
+    background: url('../assets/Images/gradient.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
 }
 
 .loginButtonText {

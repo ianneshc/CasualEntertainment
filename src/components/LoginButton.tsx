@@ -1,9 +1,13 @@
 import React from 'react';
 import '../styles/LoginButton.css';
 
-function LoginButton() {
+interface Props {
+    className?: string;
+}
+
+const LoginButton: React.FC<Props> = () => {
     return(
-        <div className='buttonContainer'>
+        <div className='loginButtonContainer'>
             <a href="/bonjour" className='loginButtonText'>Entrar</a>
         </div>
     )

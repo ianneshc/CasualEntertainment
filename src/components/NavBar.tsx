@@ -17,7 +17,7 @@ function NavBar() {
                     <a href="/about">Sobre nosotros</a>
                     <a href="/contact">Contacto</a>
                 </div>
-                <LoginButton></LoginButton>
+                <LoginButton className="navBarButton"></LoginButton>
             </nav>
             <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <div className={`line ${isMenuOpen ? 'line-1' : ''}`}></div>
