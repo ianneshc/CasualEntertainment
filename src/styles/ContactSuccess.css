@@ -1,0 +1,55 @@
+.thanksMessage {
+    font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subThankMessage {
+    text-align: center;
+}
+
+.contactSuccessContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.returnButton {
+    width: 150px; /* Ajusta el ancho según sea necesario */
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Cambia el color según tus necesidades */
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
+
+@media (max-width: 767px) {
+    .thanksMessage {
+        font-size: 8vw;
+        margin-top: 10px;
+    }
+    .subThankMessage {
+        font-size: 1.5vh;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .subThankMessage {
+        font-size: 2vh;
+        margin: 15px;
+    }
+}

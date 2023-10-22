@@ -1,0 +1,32 @@
+.requestContainer {
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.personName, .personSurname, .personPhone, .personEmail, .description {
+    margin: 5px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actionContainer {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.actionText {
+    font-size: 14px;
+}

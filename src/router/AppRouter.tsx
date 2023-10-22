@@ -4,9 +4,13 @@ import HomePage from '../pages/Home';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Hub from '../pages/Hub';
-
-import {auth} from '../firebase';
+import ContactSuccess from '../pages/ContactSuccess';
+import { getAuth } from 'firebase/auth';
 import Login from '../pages/Login';
+import '../firebase';
+
+const auth = getAuth();
+
 
 interface PrivateRouteProps {
   element: React.ReactNode;
@@ -27,6 +31,7 @@ const AppRouter = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/bonjour" element={<Login />} />
+        <Route path="/success" element={<ContactSuccess />} />
         <Route path="/hub" element={<PrivateRoute element={<Hub />} />} />
       </Routes>
     </Router>

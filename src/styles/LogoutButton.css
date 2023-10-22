@@ -1,0 +1,18 @@
+.loginButtonContainer {
+    width: 131px;
+    height: 48px;
+    border-radius: 100px;
+    align-items: center;
+    background: url('../assets/Images/gradient.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.loginButtonText {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
