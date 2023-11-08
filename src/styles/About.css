@@ -41,29 +41,20 @@
   object-fit: cover;
 }
 
-.mainSub {
-  font-size: 18px;
-  margin-top: 20px;
-  line-height: 1.6;
-  color: #555555;
-  max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+.mainSub,
 .differencesSub {
   font-size: 18px;
   margin-top: 20px;
   line-height: 1.6;
   color: #555555;
   max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-.mediaTitle {
+.mediaTitle,
+.differencesTitle {
   font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
-  font-size: 4vw;
+  font-size: 5vw;
   text-align: center;
   margin-top: 100px;
 }
@@ -75,23 +66,6 @@
   margin-bottom: 100px;
 }
 
-.differencesTitle {
-  font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
-  font-size: 5vw;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.differencesDescription {
-  font-size: 18px;
-  margin-top: 20px;
-  line-height: 1.6;
-  color: #555555;
-  max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .planningImage {
   margin-top: 20px;
   width: 800px;
@@ -100,7 +74,6 @@
 }
 
 .differencesContainer {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,18 +89,8 @@
     height: auto;
   }
 
-  .mediaTitle {
-    font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
-    font-size: 4.5vw;
-    text-align: center;
-    margin-top: 100px;
-  }
-
-  .differencesSub {
-    font-size: 2vw;
-    margin: 20px 30px;
-  }
-
+  .mediaTitle,
+  .differencesSub,
   .mainSub {
     font-size: 2vw;
     margin: 20px 30px;
@@ -135,12 +98,13 @@
 }
 
 @media (max-width: 767px) {
-  .welcome {
-    font-size: 8vw; /* Ajusta el tamaño de fuente para dispositivos móviles */
-    margin-top: 10px; /* Ajusta el margen superior para dispositivos móviles */
+  .aboutWelcome {
+    font-size: 8vw;
+    margin-top: 10px;
   }
-  
-  .mainSub {
+
+  .mainSub,
+  .differencesSub {
     font-size: 3.5vw;
     margin: 20px 30px;
   }
@@ -150,21 +114,15 @@
   }
 
   .mediaTitle {
-    font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
     font-size: 8vw;
-    text-align: center;
     margin-top: 100px;
   }
-  
+
   .socialLinks {
-    display: flex;
-    justify-content: center;
     gap: 20px;
-    margin-bottom: 100px;
   }
 
   .differencesSub {
     font-size: 3.5vw;
-    margin: 20px 30px;
   }
 }
