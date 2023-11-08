@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
             surname: formData.lastName,
             email: formData.email,
             phone: formData.phone,
-            description: formData.message
+            details: formData.message
         });
         console.log("Written with ID: ", docRef.id);
         navigate('/success');

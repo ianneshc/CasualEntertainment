@@ -25,6 +25,7 @@ const ContactRequest: React.FC<Props> = ({ name, surname, email, phone, details,
     const handleDelete = async () => {
         console.log("Removing from firestore...");
         await deleteDoc(doc(db, "contactForms", id));
+        window.location.reload();
     };
     
     return (

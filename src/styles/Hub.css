@@ -1,0 +1,15 @@
+.hubWelcome {
+    font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .hubWelcome {
+        font-family: "Kenoky Bold", Arial, Helvetica, sans-serif;
+        font-size: 4.5vw;
+        text-align: center;
+        margin-top: 100px;
+      }
+  }

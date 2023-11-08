@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import HubNavBar from '../components/HubNavBar';
 import ContactRequest from '../components/ContactRequest';
-
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
+import '../styles/Hub.css';
 
 function Hub() {
     const [contactRequests, setContactRequests] = useState<any[]>([]);
@@ -20,7 +20,7 @@ function Hub() {
     return (
         <div>
             <HubNavBar></HubNavBar>
-            <h1>Tus solicitudes de contacto</h1>
+            <h1 className='hubWelcome'>Tus solicitudes de contacto</h1>
             <section className='contactRequests'>
                 {contactRequests.map((contact: any) => (
                     <ContactRequest
@@ -31,7 +31,7 @@ function Hub() {
                         email={contact.email}
                         phone={contact.phone}
                         details={contact.details}
-                        toDelete={contact.id} // Pasamos el id a toDelete
+                        toDelete={contact.id}
                     />
                 ))}
             </section>

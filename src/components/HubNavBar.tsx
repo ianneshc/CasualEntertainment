@@ -24,6 +24,7 @@ function HubNavBar() {
                     <a href="/">Inicio</a>
                     <a href="/about">Sobre nosotros</a>
                     <a href="/contact">Contacto</a>
+                    <a href="/bonjour">Inicia sesión</a>
                 </div>
                 <LogoutButton className="navBarButton" onClick={handleLogout}></LogoutButton>
             </nav>
@@ -31,12 +32,14 @@ function HubNavBar() {
                 <div className={`line ${isMenuOpen ? 'line-1' : ''}`}></div>
                 <div className={`line ${isMenuOpen ? 'line-2' : ''}`}></div>
                 <div className={`line ${isMenuOpen ? 'line-3' : ''}`}></div>
+                <div className={`line ${isMenuOpen ? 'line-4' : ''}`}></div>
             </div>
             {isMenuOpen && (
                 <div className="side-panel">
                     <a href="/">Inicio</a>
                     <a href="/about">Sobre nosotros</a>
                     <a href="/contact">Contacto</a>
+                    <a href="/bonjour">Inicia sesión</a>
                 </div>
             )}
         </header>
